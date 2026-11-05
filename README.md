@@ -69,6 +69,13 @@ src/
 vite.config.js            Vue plugin configuration
 ```
 
+## Vue App
+<img src="docs/images/vue-app.png" alt="App homepage" width="800">
+
+## Storybook
+<img src="docs/images/storybook.png" alt="Storybook homepage" width="800">
+
+
 ## Developing Components
 
 Give each component its own folder under `src/components/`, using `<script setup>` for Composition API logic. Place a `ComponentName.stories.js` file beside the component in that folder; Storybook discovers these files automatically. Import components into `App.vue` to display them in the application.
