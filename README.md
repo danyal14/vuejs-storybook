@@ -57,8 +57,12 @@ public/
   vue.png                 Vue logo
 src/
   components/
-    Welcome.vue           Composition API welcome component
-    Welcome.stories.js    Component stories and controls
+    Welcome/
+      Welcome.vue         Composition API welcome component
+      Welcome.stories.js  Welcome stories and controls
+    PostComponent/
+      PostComponent.vue          Image and linked headline
+      PostComponent.stories.js   Post stories and controls
   App.vue                 App home page
   main.js                 Vue entry point
   style.css               Shared responsive styles
@@ -67,7 +71,7 @@ vite.config.js            Vue plugin configuration
 
 ## Developing Components
 
-Add Vue single-file components under `src/components/`, using `<script setup>` for Composition API logic. Place a `ComponentName.stories.js` file beside each component; Storybook discovers these files automatically. Import components into `App.vue` to display them in the application.
+Give each component its own folder under `src/components/`, using `<script setup>` for Composition API logic. Place a `ComponentName.stories.js` file beside the component in that folder; Storybook discovers these files automatically. Import components into `App.vue` to display them in the application.
 
 This starter uses JavaScript. TypeScript is installed as a peer dependency of Storybook's Vue integration; converting the app to TypeScript is not required.
 
